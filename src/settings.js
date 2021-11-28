@@ -32,9 +32,11 @@ export const setting = {
     },
     update: function() {
         this.OPERATION = this._operation.value;
-        this.NUM1_MIN = this._num1Range.min.value;
-        this.NUM1_MAX = this._num1Range.max.value;
-        this.NUM2_MIN = this._num2Range.min.value;
-        this.NUM2_MAX = this._num2Range.max.value;
+        this.NUM1_MIN = Number(this._num1Range.min.value);
+        this.NUM1_MAX = Number(this._num1Range.max.value);
+        this.NUM2_MIN = Number(this._num2Range.min.value);
+        this.NUM2_MAX = Number(this._num2Range.max.value);
+
+        document.getElementById('operator').textContent = this.OPERATION;
     }
 }
