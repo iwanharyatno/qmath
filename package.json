@@ -1,0 +1,33 @@
+{
+  "name": "qmath",
+  "version": "1.0.0",
+  "description": "A simple program that provides basic math question.",
+  "main": "index.js",
+  "scripts": {
+      "start": "node server.js",
+      "dev": "webpack --mode development",
+      "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwanharyatno/qmath.git"
+  },
+  "keywords": [
+    "math",
+    "basic",
+    "quick-math"
+  ],
+  "author": "iwanharyatno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwanharyatno/qmath/issues"
+  },
+  "homepage": "https://github.com/iwanharyatno/qmath#readme",
+  "devDependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
