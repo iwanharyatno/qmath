@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 1.5rem;
+    box-shadow: 0 2px 4px #909090;
+    background-color: #0867C7;
+    color: #FFFFFF;
+}
+
+#setting-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+#problem {
+    max-width: 35rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 7px #909090;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+#problem.correct,
+#problem.correct #result{
+    background-color: #84E605;
+}
+#problem.wrong,
+#problem.wrong #result{
+    background-color: #FF8B42;
+}
+
+#num-1, #num-2 {
+    font-size: 7rem;
+    display: inline-block;
+    text-align: right;
+    width: 85%;
+}
+#num-2 {
+    margin-bottom: 1rem;
+}
+
+#operation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+}
+#operation #operator {
+    width: 10%;
+    text-align: center;
+    font-size: 3rem;
+}
+#operation #separator {
+    width: 85%;
+    background-color: #000000;
+    height: 0.3em;
+}
+
+#result {
+    border: none;
+    width: 85%;
+    font-size: 7rem;
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#buttons #evaluate,
+#buttons #random {
+    border: none;
+    border-radius: 14px;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    transition: background 0.7s;
+    transition: border 0.7s;
+}
+
+#buttons #evaluate {
+    background-color: #00A80B;
+}
+#buttons #random {
+    background-color: #0867C7;
+}
+
+#buttons #evaluate:hover,
+#buttons #random:hover {
+    border: 2px solid #000000;
+}
+
+#buttons #evaluate:active {
+    background-color: #00980B;
+}
+#buttons #random:active {
+    background-color: #0850C7;;
+}
+
+@media screen and (min-width: 780px) {
+    #buttons {
+        flex-direction: row;
+    }
+    #buttons #evaluate,
+    #buttons #random {
+        width: 48%;
+    }
+}
