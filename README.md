@@ -19,7 +19,7 @@ You can customize behaviour of the app by adjusting few options in settings. You
     - :heavy_plus_sign: Addition, Treat operands with addition operation. The result is sum of the top number and the bottom number.
     - :heavy_minus_sign: Subtraction, Treat operands with subtraction operation. The result is the top number minus the bottom number.
     - :heavy_multiplication_x: Multiplication, Treat operands with multiplication operation. The result is the top number times the bottom number.
-    - :heavy_division_sign: Division, Treat operands with division operation. The result is the top number divided by the bottom number. And you must at least compute the result with 3 decimal points and round it by 2 decimal points precision (e.g. if the result is 4.666 then the answer is 4.67).
+    - :heavy_division_sign: Division, Treat operands with division operation. The result is the top number divided by the bottom number. And you must at least compute the result with 3 decimal precision and round it by 2 decimal precision (e.g. if the result is 4.666 then the answer is 4.67).
 - Number 1 Range, set the range of the top number.
 - Number 2 Range, set the range of the bottom number.
 - Apply Button, don't forget to apply the modified settings.
